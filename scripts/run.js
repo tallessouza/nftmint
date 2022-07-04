@@ -10,7 +10,12 @@ const main = async () => {
 
   txn = await contract.mint()
   await txn.wait()
-
+  txn = await contract.mint()
+  await txn.wait()
+  txn = await contract.mint()
+  await txn.wait()
+  txn = await contract.mint()
+  await txn.wait()
 }
 
 const runMain = async () => {

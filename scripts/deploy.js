@@ -5,14 +5,6 @@ const main = async () => {
   await contract.deployed()
   console.log("Deployed to:", contract.address)
 
-  let txn = await contract.mint()
-  await txn.wait()
-  console.log("Minted NFT #1")
-
-  txn = await contract.mint()
-  await txn.wait()
-  console.log("Minted NFT #2")
-
 }
 const runMain = async () => {
   try {
